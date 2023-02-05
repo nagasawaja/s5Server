@@ -1,0 +1,10 @@
+[program:s5Server]
+command = /data/s5Server
+directory=/data
+autostart = true
+autorestart = true
+log_stdout=true             ; if true, log program stdout (default true)
+log_stderr=true             ; if true, log program stderr (def false)
+logfile=/tmp/supervisor/get_identifying_code_logFile.log
+stderr_logfile=/data/errS5.log
+stdout_logfile=/data/outS5.log
